@@ -56,8 +56,8 @@ namespace VideoProject
             //   consumerSecret: "");
 
             app.UseFacebookAuthentication(
-               appId: "147176716629369",
-               appSecret: "50f9906b2c8856243a47ee5399444bdb");
+               appId: "",
+               appSecret: "");
 
             //app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
             //{
