@@ -1,0 +1,16 @@
+﻿@model VideoProject.Models.Customer
+
+@{
+    ViewBag.Title = Model.Name;
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var birthdate = Model.Birthdate.HasValue ? Model.Birthdate.ToString() : string.Empty;
+}
+
+<h2>@Model.Name</h2>
+<ul>
+    <li>Membership Type: @Model.MembershipType.Name</li>
+    @if (Model.Birthdate.HasValue)
+    {
+        <li>Birthdate: @birthdate.ToString()</li>
+    }
+</ul>

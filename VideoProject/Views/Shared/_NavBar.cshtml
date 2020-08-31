@@ -1,0 +1,18 @@
+﻿<div class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+	<div class="container">
+		<div class="navbar-header">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="true" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			@Html.ActionLink("Vidly", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+		</div>
+		<div class="navbar-collapse collapse showing">
+			<ul class="nav navbar-nav">
+				<li class="nav-item">@Html.ActionLink("New Rental", "New", "Rentals") <span /></li>
+				<li class="nav-item">@Html.ActionLink("Customers", "Index", "Customer") <span /></li>
+				<li class="nav-item">@Html.ActionLink("Movies", "Index", "Movie") <span /></li>
+			</ul>
+			@Html.Partial("_LoginPartial")
+		</div>
+	</div>
+</div>
